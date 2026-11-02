@@ -15,6 +15,8 @@ dag_1  wait_for_file → check_file_not_empty ─┬→ log_empty_file
 dag_2  load_to_mongo
 ```
 
+![DAG in the Airflow UI](dag%20in%20airflow.png)
+
 ## dag_1: `tiktok_reviews_to_mongo`
 
 Code: `dags/dag_1/` (`main.py` is the DAG, `transforms.py` the processing steps, `adapters.py` the storage
